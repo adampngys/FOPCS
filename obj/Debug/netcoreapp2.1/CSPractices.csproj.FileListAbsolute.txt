@@ -1,0 +1,11 @@
+C:\C Sharp\Projects\CSPractices\CSPractices\bin\Debug\netcoreapp2.1\CSPractices.deps.json
+C:\C Sharp\Projects\CSPractices\CSPractices\bin\Debug\netcoreapp2.1\CSPractices.runtimeconfig.json
+C:\C Sharp\Projects\CSPractices\CSPractices\bin\Debug\netcoreapp2.1\CSPractices.runtimeconfig.dev.json
+C:\C Sharp\Projects\CSPractices\CSPractices\bin\Debug\netcoreapp2.1\CSPractices.dll
+C:\C Sharp\Projects\CSPractices\CSPractices\bin\Debug\netcoreapp2.1\CSPractices.pdb
+C:\C Sharp\Projects\CSPractices\CSPractices\obj\Debug\netcoreapp2.1\CSPractices.csprojAssemblyReference.cache
+C:\C Sharp\Projects\CSPractices\CSPractices\obj\Debug\netcoreapp2.1\CSPractices.csproj.CoreCompileInputs.cache
+C:\C Sharp\Projects\CSPractices\CSPractices\obj\Debug\netcoreapp2.1\CSPractices.AssemblyInfoInputs.cache
+C:\C Sharp\Projects\CSPractices\CSPractices\obj\Debug\netcoreapp2.1\CSPractices.AssemblyInfo.cs
+C:\C Sharp\Projects\CSPractices\CSPractices\obj\Debug\netcoreapp2.1\CSPractices.dll
+C:\C Sharp\Projects\CSPractices\CSPractices\obj\Debug\netcoreapp2.1\CSPractices.pdb
