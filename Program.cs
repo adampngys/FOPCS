@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 //namespace CSPractices
@@ -17,7 +18,7 @@ using System.Text.RegularExpressions;
 //// For the next 8.5 kms the rate is 4 cents for every 100 meters
 //// After that: 5 cents for evey 100 meters
 //// In the above example you should assume that the meter falls every 100 meters.So assume that 
-//// if the distance travelled(i.e.input) is 12.13 km then it is rounded to 12.20 and the cost would be:
+//// if the distance travelled (i.e.input) is 12.13 km then it is rounded to 12.20 and the cost would be:
 //// $ 2.40 (first 0.5 km) +
 //// $ 85 * 0.04 (next 8.5 km) +
 //// $ (122 -90) * 0.05 (for distance over 9.0 km)
@@ -35,17 +36,40 @@ using System.Text.RegularExpressions;
 //            Console.WriteLine();
 //            Console.WriteLine("You travelled {0} km.", distance1);
 //            Console.WriteLine();
+//            double price1, price2, price3, price4;
 //            Console.WriteLine("\tTaxi Fare");
-//            double price1 = 2.4;
 //            Console.WriteLine("-----------------------------");
-//            Console.WriteLine("\tFirst 0.5 km = {0:c}", price1);
-//            double price2 = 85 * 0.04;
-//            Console.WriteLine("\tNext 8.5 km = {0:c}", price2);
-//            double price3 = (distance1 * 10 - 90) * 0.05;
-//            Console.WriteLine("\tAbove 9 km = {0:c}", price3);
-//            Console.WriteLine("-----------------------------");
-//            double price4 = price1 + price2 + price3;
-//            Console.WriteLine("\tTOTAL = {0:c}", price4);
+//            if (0 < distance1 && distance1 <= 0.5 )
+//            {
+//                price1 = 2.4;
+//                Console.WriteLine("\tFirst 0.5 km = {0:c}", price1);
+//                Console.WriteLine("-----------------------------");                
+//                Console.WriteLine("\tTOTAL = {0:c}", price1);
+//            }
+//            if (0.5 < distance1 && distance1 <= 9)
+//            {
+//                price1 = 2.4;
+//                price2 = (distance1 - 0.5)*10*0.04;
+//                Console.WriteLine("\tFirst 0.5 km = {0:c}", price1);
+//                Console.WriteLine("\tSecond leg (0.6 to 8.5 km) = {0:c}", price2);
+//                Console.WriteLine("-----------------------------");
+//                price4 = price1 + price2;
+//                Console.WriteLine("\tTOTAL = {0:c}", price4);
+//            }
+//            if (9 < distance1)
+//            {                
+//                price1 = 2.4;
+//                price2 = 8.5 * 10 * 0.04;
+//                price3 = (distance1 - 9) * 10 * 0.05;                
+//                Console.WriteLine("\tFirst 0.5 km = {0:c}", price1);
+//                Console.WriteLine("\tSecond leg (0.6 to 85 km) = {0:c}", price2);
+//                Console.WriteLine("\tThird leg (>85 km) = {0:c}", price3);
+//                Console.WriteLine("-----------------------------");
+//                price4 = price1 + price2 + price3;
+//                Console.WriteLine("\tTOTAL = {0:c}", price4);
+//            }
+
+
 //        }
 //    }
 //}
@@ -70,21 +94,21 @@ using System.Text.RegularExpressions;
 //            }
 //            else
 //            {
-//                if(GRADE > 0 && GRADE < 40)
+//                if (GRADE > 0 && GRADE < 39)
 //                {
-//                    Console.WriteLine("Your grade is F.");
+//                    Console.WriteLine("You scored {0} marks which is an F grade.", GRADE);
 //                }
 //                else if (GRADE > 40 && GRADE < 59)
 //                {
-//                    Console.WriteLine("Your grade is C.");
+//                    Console.WriteLine("You scored {0} marks which is a C grade.", GRADE);
 //                }
 //                else if (GRADE > 60 && GRADE < 79)
 //                {
-//                    Console.WriteLine("Your grade is B.");
+//                    Console.WriteLine("You scored {0} marks which is a B grade.", GRADE);
 //                }
-//                else 
+//                else
 //                {
-//                    Console.WriteLine("Your grade is A.");
+//                    Console.WriteLine("You scored {0} marks which is an A grade.", GRADE);
 //                }
 //            }
 
@@ -145,6 +169,16 @@ using System.Text.RegularExpressions;
 //    {
 //        static void Main(string[] args)
 //        {
+//            //Console.Write("Please enter your name and gender, separated by a \",\" : ");
+//            //string full = Console.ReadLine();
+//            //string[] parts = full.Split(',');
+//            //string first = parts[0];
+//            //string last = parts[1];
+
+//            //Console.WriteLine("Hi, {0}!", first);
+//            //Console.WriteLine("You're a {0}.", last);
+
+
 //            Console.Write("Please enter your name: ");
 //            string NAME = Console.ReadLine();
 //            Console.Write("Please enter your gender (M/F): ");
@@ -372,9 +406,8 @@ using System.Text.RegularExpressions;
 
 //            double z = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
 //            decimal z1 = Convert.ToDecimal(z);
-//            z1 = Math.Round(z1, 2);
-//            Console.WriteLine($"The distance between Points 1 and 2 is {z1}.");
-
+//            z1 = Math.Round(z1, 3);
+//            Console.WriteLine($"The distance between ({x1}, {y1}) and ({x2}, {y2}) is {z1}.");
 //        }
 //    }
 //}
